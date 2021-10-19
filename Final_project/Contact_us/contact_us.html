@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Contact Us Form</title>
+  
+   <link href="cg_validate.css" rel="stylesheet" />
+   <link href="cg_base.css" rel="stylesheet" />
+   <link href="cg_forms.css" rel="stylesheet" />
+   <link href="home_style.css" rel="stylesheet" />
+   <link href="cg_styles.css" rel="stylesheet" />
+   <link href="../welcome/normalize.css" rel="stylesheet" />
+   <link href="../welcome/normalize.css" rel="stylesheet"/>
+</head>
+
+<body>
+   <nav id="nav_menu">
+    		<ul>
+    			<li><a href="../welcome/home.html" class="current">Welcome</a>
+                   <ul>
+                		<li><a href="../welcome/service_time/service_time.html">Service Time</a></li>
+                    	<li><a href="../welcome/Events/events.html">Events </a></li>
+                    	<li><a href="../welcome/FAQ/faq.html">FAQ</a></li>   
+                	</ul>  
+                </li>	 
+            	<li><a href="../location/location.html">Location</a></li>
+    			<li><a href="#" >Multimedia</a>
+    			    <ul>
+                    	<li><a href="../Multimidia/galery/index.html">Galery</a></li>
+                    	<li><a href="../Multimidia/past_service_and_sermons/past_service.html">Past Services and Sermon</a></li>    
+                	</ul>   			    
+                </li>
+    			<li><a href="3" >About</a>
+            		<ul>
+                		<li><a href="../About/vision/vision.html">Vison</a></li>
+                    	<li><a href="../About/our_beliefs_and_values/our_beliefs_and_values.html">Our Beliefs </a></li>
+                    	<li><a href="../About/who_we_are/who_we_are.html">Who We Are</a></li>    
+                	</ul>    				
+    			</li>  
+    			<li><a href="#" class="lastitem">Contact Us</a></li>
+    			       
+    		</ul>
+    	</nav>
+   <section>
+      <h1> Contact Us</h1>
+      <p>Required Item (*)</p>
+      <form action="http://example.com/cg/register" method ="post">
+            <label for="title">Title</label>
+            <input name="title" id="titelBox" type="text" list="titleList" />
+            <datalist id="titleList">
+                           <option value="Mr." />
+                           <option value="Mrs." />
+                           <option value="Ms." />
+                           <option value="Prof." />
+                           <option value="Dr." />
+                           <option value="Assist. Prof." />
+                           <option value="Assoc. Prof." />
+                   </datalist> 
+
+            <label for="fnBox">First Name*</label>
+            <input name="firstName" id="fnBox" type="text" required />
+            
+            <label for="lnBox">Last Name*</label>
+            <input name="lastName" id="lnBox" type="text" required />
+            
+            
+            <label for="addBox"> Address* </label>
+            <textarea name="adress" id="addBox" type="text" required></textarea>
+            
+            
+            <label for="mailBox"> E-mail*  </label>
+            <input name="email" id="mailBox" type="email" required />
+            
+            <label for="phoneBox"> Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneBox" required placeholder="(nnn) nnn-nnnn" pattern= "^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+                        
+            <label for="addBox"> Comment  </label>
+            <textarea name="adress" id="addBox" type="text"></textarea>
+          <p><input type="submit" value ="continue"/></p>  
+      </form>
+   </section>
+
+   <footer>
+      <nav>
+         <ul>
+            <li><a href="../About/our_beliefs_and_values/our_beliefs_and_values.html">About Us</a></li>
+            <li><a href="../location/location.html">Our Locations</a></li>
+            
+         </ul>
+         <ul>
+            <li><a href="../welcome/home.html">Home </a></li>
+            <li><a href="tel://412-699-2175">Call Us</a></li>
+         </ul>   
+         <ul>
+            <li><a href = "mailto: eyaspeda@gmail.com">Send Email</a></li>
+            <li><a href="../Contact_us/contact_us.html">Contact Us</a></li>
+         </ul>                
+       </nav>
+   </footer>
+<script src="cg_script.js"></script>  
+</body>
+</html>

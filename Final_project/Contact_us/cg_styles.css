@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+section {
+   background: white;
+   -webkit-flex: 2 1 421px;
+   flex: 2 1 421px; 
+   padding: 10px 20px 20px 40px; 
+}
+
+section h1 {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+   font-size: 3em;
+   margin: 40px 0px 40px;
+   color: rgb(83, 183, 51);
+}
+
+section > p {
+   margin-bottom: 20px;
+   padding-bottom: 9px;
+   border-bottom: 3px solid rgb(83, 183, 51);
+}
+
+footer {
+   color: white;    
+   background: rgb(44, 70, 44);  
+   height: 70px;
+   padding-top: 20px;
+   text-align: center;
+   font-size: 0.9em; 
+   width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.9em;
+   }
+   
+   nav {
+      -webkit-order: 99;
+      order: 99;
+   }
+   
+   footer {
+      -webkit-order: 100;
+      order: 100;
+   }
+}
+
+@media only screen and (min-width: 460px) {
+
+
+}
